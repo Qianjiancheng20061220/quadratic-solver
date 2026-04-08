@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quadratic Equation Solver</title>
+</head>
+<body>
+    <h1>Solve Quadratic Equation</h1>
+
+    <script>
+        // 1. Use prompt 3 times to get a, b, c
+        let a = parseFloat(prompt("Please enter coefficient a:"));
+        let b = parseFloat(prompt("Please enter coefficient b:"));
+        let c = parseFloat(prompt("Please enter coefficient c:"));
+
+        // 2. Calculate discriminant delta
+        let delta = b * b - 4 * a * c;
+
+        // 3. Calculate two roots
+        let x1 = (-b + Math.sqrt(delta)) / (2 * a);
+        let x2 = (-b - Math.sqrt(delta)) / (2 * a);
+
+        // 4. Show result with alert
+        alert("Roots:\nx1 = " + x1 + "\nx2 = " + x2);
+
+        // 5. Print result in console
+        console.log("x1 =", x1);
+        console.log("x2 =", x2);
+    </script>
+</body>
+</html>
